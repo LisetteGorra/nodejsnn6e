@@ -1,16 +1,30 @@
 var fs = require('fs');
-
-fs.readFile('readME.txt', 'utf8', function(err, data){
-   fs.writeFile('writeME.txt', data); 
-
-
-    // console.log(data);
+fs.unlink('./stuff/writeME.txt', function(){
+    
+fs.rmdir('stuff');
 });
 
-// console.log('test');
-
-// var readME = fs.readFileSync('readME.txt', 'utf8');
-// console.log(readME);
 
 
-// var readME = fs.readFileSync('readME.txt', 'utf8');
+
+// fs.mkdirSync('stuff');
+// fs.rmdirSync('stuff');
+
+
+
+// fs.mkdir('stuff', function(){
+//     fs.readFile('readME.txt', 'utf8', function(err, data){
+//     fs.writeFile('./stuff/writeME.txt', data);
+//     });
+// });
+
+
+
+
+
+
+
+
+
+
+// fs.unlink('writeME.txt');
