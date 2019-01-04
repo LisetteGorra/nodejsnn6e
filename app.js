@@ -1,40 +1,16 @@
-var events = require('events');
+var fs = require('fs');
 
-var util = require('util');
+fs.readFile('readME.txt', 'utf8', function(err, data){
+   fs.writeFile('writeME.txt', data); 
 
-var Person = function(name){
-    this.name = name;
-};
 
-util.inherits(Person, events.EventEmitter);
-
-var tom = new Person ('tom');
-var mary = new Person ('mary');
-var john = new Person ('john'); 
-
-var people = [tom, mary, john];
-
-people.forEach(function(person){
-   person.on('speak', function(mssg){
-       console.log(person.name + ' said: ' + mssg);
-   }); 
+    // console.log(data);
 });
 
+// console.log('test');
 
-tom.emit('speak', 'wassup');
-mary.emit('speak', 'how are you! Long time no see!!!');
-
-
-
+// var readME = fs.readFileSync('readME.txt', 'utf8');
+// console.log(readME);
 
 
-
-
-// var myEmitter = new events.EventEmitter();
-
-// myEmitter.on('someEvent', function(mssg){
-//   console.log(mssg);
-// });
-
-// myEmitter.emit('someEvent', 'the event was emitted');
-
+// var readME = fs.readFileSync('readME.txt', 'utf8');
