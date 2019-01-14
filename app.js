@@ -9,13 +9,21 @@ var fs = require('fs');
 
 var server = http.createServer(function(req, res){
     console.log('request was made:' + req.url);
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    var myReadStream = fs.createReadStream(__dirname + '/index.txt', 'utf8');
-    myReadStream.pipe(res);
+    res.writeHead(200, {'Content-Type': 'application/json'});
+    var myObj = {
+        name: 'pip',
+        job: 'dragon',
+        age: 22
+    };
+    res.end(JSON.stringify(myObj));
+});   
+   
+    // var myReadStream = fs.createReadStream(__dirname + '/index.txt', 'utf8');
+    // myReadStream.pipe(res);
 
     
-    res.end('Hey you!');
-});
+//     res.end('Hey you!');
+
 
 server.listen(3000, '127.0.0.1');
 console.log('hey, I am now listening to port 3000');
