@@ -54,6 +54,10 @@ Node.js Overview
         
         Express.js was foounded by TJ Holowaychuck on May 22, 2010 Version 0.12.0
         
+        - Easy and flexible routing system
+        - Integrates with many templating engines
+        - Contains a middleware framework
+        
         -Templating (homework) 
         
         
