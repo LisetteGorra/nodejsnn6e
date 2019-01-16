@@ -16,10 +16,10 @@ app.get('/contact', function(req, res){
 });
 
 app.get('/profile/:name' , function(req, res){
-    var data = {age: 33, job: 'dragon'};
+    var data = {age: 33, job: 'dragon', hobbies:['sleeping', 'fighting', 'eating']};
    res.render('profile', {person: req.params.name, data: data});
 });
-
+ 
 app.listen(3000);
 
 
