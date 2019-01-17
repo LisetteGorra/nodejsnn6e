@@ -99,3 +99,12 @@ https://en.wikipedia.org/wiki/Express.js
 
 tj holowaychuck - Google Search
 https://www.google.com/search?q=tj+holowaychuck&rlz=1C5CHFA_enUS813US813&oq=tj+holowaychuck&aqs=chrome..69i57j0l5.6247j0j8&sourceid=chrome&ie=UTF-8
+
+----------------------------------------------------
+
+ NoSQL Databases 
+ -Alternaticve to SQL databases
+ -Store documents (JSON) in a db, instead of tables with rows and columns 
+ -Works really well with Javascript (and therefor Node.JS)
+ 
+
