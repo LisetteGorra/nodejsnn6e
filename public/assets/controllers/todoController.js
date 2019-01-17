@@ -1,6 +1,10 @@
 module.export = function(app){
     
 app.get('/todo', function(req, res){
+<<<<<<< HEAD
+=======
+    res.render('todo');
+>>>>>>> version24.0
     
 });
 
